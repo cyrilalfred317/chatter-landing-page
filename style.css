@@ -1,0 +1,816 @@
+/* ==========================================
+   GLOBAL STYLES
+   ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+/* ==========================================
+   NAVIGATION BAR
+   ========================================== */
+
+.site-header {
+  width: 100%;
+  min-height: 98px;
+  padding: 20px 5%;
+  border: 1px solid #d0d0d0;
+  background-color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  color: #5438a7;
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main-nav a {
+  color: #222222;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.auth-links a {
+  width: 157px;
+  min-height: 56px;
+  padding: 0 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.login-btn {
+  color: #222222;
+  border: 1px solid #543ee0;
+  background-color: transparent;
+}
+
+.signup-btn {
+  color: #ffffff;
+  border: 1px solid #543ee0;
+  background-color: #543ee0;
+}
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+
+.hero {
+  width: 100%;
+  height: 764px;
+  position: relative;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: absolute;
+  top: 216px;
+  left: 15%;
+  width: 70%;
+  color: #ffffff;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  margin-bottom: 24px;
+}
+
+.hero-content p {
+  max-width: 740px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 36px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 157px;
+  min-height: 56px;
+  padding: 14px 20px;
+
+  background-color: #543ee0;
+  color: #ffffff;
+  border-radius: 8px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ==========================================
+   ABOUT CHATTER SECTION
+   ========================================== */
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 84px;
+
+  padding: 80px 5%;
+  background-color: #ffffff;
+}
+
+.about-text {
+  width: 55%;
+}
+
+.about-text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+.about-text p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #000000;
+}
+
+.about-image {
+  width: 40%;
+}
+
+.about-image img {
+  display: block;
+  width: 100%;
+  height: 404px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ==========================================
+   WHY JOIN CHATTER SECTION
+   ========================================== */
+
+.why-join {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.why-join-intro {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 54px;
+}
+
+.why-join-intro h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  color: #000000;
+}
+
+.why-join-intro p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #000000;
+}
+
+/* Feature cards */
+
+.features-container {
+  width: 1014px;
+  height: 324px;
+
+  display: flex;
+  align-items: stretch;
+  gap: 48px;
+
+  margin-bottom: 100px;
+}
+
+.feature-card {
+  width: 306px;
+  height: 324px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+
+  padding: 15px 18px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+}
+
+.feature-icon {
+  display: block;
+  width: 92px;
+  height: 88px;
+  object-fit: contain;
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #000000;
+}
+
+.feature-card p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #626262;
+}
+
+/* ==========================================
+   TESTIMONIAL SECTION
+   ========================================== */
+
+.testimonial-section {
+  width: 100%;
+  min-height: 492px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffedcc80;
+}
+
+.testimonial-container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 84px;
+
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.testimonial-image {
+  width: 300px;
+  height: 292px;
+  flex-shrink: 0;
+
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.testimonial-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  flex: 1;
+  min-width: 0;
+  margin-top: 93px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.testimonial-quote {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 48px;
+}
+
+.testimonial-author {
+  margin-bottom: 24px;
+}
+
+.author-name {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #000000;
+}
+
+.author-role {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
+}
+
+.testimonial-button {
+  width: 157px;
+  height: 56px;
+  padding: 8px 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #543ee0;
+  color: #ffffff;
+  border-radius: 8px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-decoration: none;
+}
+
+/* ==========================================
+   WRITE, READ AND CONNECT SECTION
+   ========================================== */
+
+.connect-section {
+  max-width: 1127px;
+  min-height: 380px;
+  margin: 100px auto;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.connect-images {
+  width: 352px;
+  height: 412px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+
+.connect-image-column {
+  height: 412px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.connect-profile {
+  display: block;
+  width: 154px;
+  height: 154px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.connect-middle-image {
+  height: 412px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connect-content {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.connect-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #111111;
+}
+
+.connect-content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #111111;
+}
+
+.connect-button {
+  min-width: 157px;
+  height: 56px;
+  padding: 8px 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #543ee0;
+  color: #ffffff;
+  border-radius: 8px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ==========================================
+   FOOTER SECTION
+   ========================================== */
+
+.footer-section {
+  width: 100%;
+  min-height: 402px;
+  padding: 80px 100px 80px 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+
+  background-color: #ffedcc80;
+}
+
+.footer-brand h3 {
+  margin: 0;
+  color: #543ee0;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.footer-info {
+  line-height: 36px;
+}
+
+.footer-info h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-info a {
+  color: #111111;
+  text-decoration: none;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+/* ===== TABLET AND SMALL LAPTOP ===== */
+
+@media (max-width: 1024px) {
+  .site-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-nav,
+  .auth-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-content {
+    left: 8%;
+    width: 84%;
+  }
+
+  .about {
+    gap: 40px;
+  }
+
+  .about-text,
+  .about-image {
+    width: 50%;
+  }
+
+  .why-join {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .features-container {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .feature-card {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .testimonial-container {
+    padding: 60px 5%;
+    gap: 32px;
+  }
+
+  .testimonial-content {
+    margin-top: 0;
+  }
+
+  .connect-section {
+    padding: 0 5%;
+    gap: 40px;
+  }
+
+  .connect-images {
+    width: 300px;
+    gap: 24px;
+  }
+
+  .connect-profile {
+    width: 138px;
+    height: 138px;
+  }
+
+  .connect-content h2 {
+    font-size: 38px;
+    line-height: 54px;
+  }
+
+  .footer-section {
+    padding: 60px 5%;
+    gap: 24px;
+  }
+}
+
+/* ===== MOBILE SCREENS ===== */
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 20px 5%;
+    gap: 18px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+
+  .main-nav {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .main-nav a {
+    font-size: 14px;
+  }
+
+  .auth-links {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .auth-links a {
+    width: auto;
+    min-height: 44px;
+    padding: 0 20px;
+  }
+
+  .hero {
+    height: 600px;
+  }
+
+  .hero-content {
+    top: 50%;
+    left: 6%;
+    width: 88%;
+    transform: translateY(-50%);
+  }
+
+  .hero-content h1,
+  .about-text h2,
+  .why-join-intro h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .hero-content br {
+    display: none;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 28px;
+    padding: 60px 6%;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    height: auto;
+    max-height: 404px;
+  }
+
+  .why-join {
+    padding: 0 6%;
+  }
+
+  .why-join-intro {
+    margin-bottom: 32px;
+  }
+
+  .features-container {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .feature-card {
+    width: 100%;
+    min-height: 0;
+    padding: 24px;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 6%;
+  }
+
+  .testimonial-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .testimonial-quote {
+    margin-bottom: 0;
+  }
+
+  .testimonial-author {
+    margin-bottom: 0;
+  }
+
+  .author-name {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  .author-role {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .connect-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+    margin: 60px auto;
+    padding: 0 6%;
+  }
+
+  .connect-images {
+    width: 300px;
+    max-width: 100%;
+    height: 320px;
+    gap: 24px;
+  }
+
+  .connect-image-column,
+  .connect-middle-image {
+    height: 320px;
+  }
+
+  .connect-content h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+
+  .footer-section {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 36px;
+    padding: 60px 6%;
+  }
+
+  .footer-brand {
+    width: 100%;
+  }
+
+  .footer-info {
+    flex: 1 1 180px;
+  }
+}
+
+/* ===== SMALL MOBILE SCREENS ===== */
+
+@media (max-width: 480px) {
+  .hero {
+    height: 540px;
+  }
+
+  .hero-content h1,
+  .about-text h2,
+  .why-join-intro h2,
+  .connect-content h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .hero-content p,
+  .why-join-intro p,
+  .connect-content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .feature-card h3,
+  .footer-info h3 {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  .feature-card p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .connect-images {
+    width: 260px;
+    height: 290px;
+    gap: 20px;
+  }
+
+  .connect-image-column,
+  .connect-middle-image {
+    height: 290px;
+  }
+
+  .connect-profile {
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer-brand h3 {
+    font-size: 32px;
+  }
+}
